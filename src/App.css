@@ -19,6 +19,10 @@ body {
   height: calc(100% - 20px);
 }
 
+.monitor-screen-container {
+  width: calc(100% - 25px);
+}
+
 a {
   font-weight: 500;
   text-decoration: underline;
@@ -74,6 +78,7 @@ a {
   color: var(--highlight);
   font-family: "Doto";
   font-weight: 900;
+  line-height: 1.2;
   margin: 0;
   width: auto;
 }
