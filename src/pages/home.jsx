@@ -7,9 +7,6 @@ import BannerAsciiResponsive from "../components/banner-ascii-responsive";
 function Home() {
   return (
     <Monitor>
-      <header className="monitor-screen-title">
-        <h1>Victor Hugo Batista</h1>
-      </header>
       <section className="monitor-screen-content">
         <div className="monitor-screen-jumbotron">
           <BannerAsciiResponsive texts={["Tecnologia", "Software", "Solucao", "Qualidade", "Fullstack"]} />
@@ -34,19 +31,11 @@ function Home() {
         <p>Conheci o Lean Kanban e passei a trabalhar sem as sprints que havia me acostumado por um ano.</p>
 
         <h3>Futuro</h3>
-        <p>Isso me leva ao presente e ao futuro. Atualmente me encontro estudando Java Spring e atualizando meu React web, mas como sempre, não tenho medo de código.</p>
+        <p>Isso nos leva ao presente e ao futuro. Atualmente me encontro estudando Java Spring e atualizando meu React web, mas como sempre, não tenho medo de código.</p>
         <p>Só agora que me vi obrigado à olhar para trás e atualizar as minhas redes que percebi o tamanho do caminho que percorri para chegar até aqui. Foram muitas linhas de código escritas, muitos deploys feitos, muitos bugs resolvidos, mas, além disso, muitos clientes que tiveram sua experiência construída e melhorada pelos times que tive a honra de fazer parte. Tenho muito à agredecer à cada um deles, pelo tanto que pude aprender, para além do que a faculdade ensina e pelas conexões estabelecidas.</p>
         <p>E agora, vamos para o próximo passo?</p>
         <p>Sinta-se livre para me procurar no mei <b><a href="https://www.linkedin.com/in/victorhugobatista">linkedin</a></b> o/</p>
       </section>
-      <footer className="monitor-screen-footer">
-        <ul>
-          <li>Beta v0.1</li>
-          <li>Desenhado por Victor Hugo Batista</li>
-          <li><a about="blank" href="https://www.linkedin.com/in/victorhugobatista">LinkedIn</a></li>
-          <li><a about="blank" href="https://github.com/VictorHugoBatista">GitHub</a></li>
-        </ul>
-      </footer>
     </Monitor>
   );
 }

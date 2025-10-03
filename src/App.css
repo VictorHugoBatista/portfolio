@@ -1,14 +1,22 @@
 :root {
+  --font-title: "Bitcount";
+  --font-text: "Bitcount single";
+  --font-jumbotron: "Doto";
   --background-monitor: #C9C7AF;
   --background-monitor-screen: #EEF1DB;
   --foreground: #485B63;
   --highlight: #f51111;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-title);
+  margin: 1em 0 0;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Bitcount single";
+  font-family: var(--font-text);
   font-size: 20px;
   line-height: 1.5;
   height: 100vh;
@@ -53,16 +61,22 @@ a {
   width: 100%
 }
 
+.monitor-screen-main-header {
+  margin-bottom: 160px;
+  text-align: right;
+}
+
 .monitor-screen-title {
   border-bottom: solid 4px var(--foreground);
-  margin-bottom: 160px;
 }
 
 .monitor-screen-title h1 {
-  font-family: "Bitcount";
   font-size: 50px;
   font-weight: normal;
-  text-align: right;
+}
+
+.monitor-screen-top-nav ul {
+  list-style: none;
 }
 
 .monitor-screen-content p {
@@ -76,7 +90,7 @@ a {
 
 .monitor-screen-jumbotron pre {
   color: var(--highlight);
-  font-family: "Doto";
+  font-family: var(--font-jumbotron);
   font-weight: 900;
   line-height: 1.2;
   margin: 0;
@@ -89,31 +103,6 @@ a {
   justify-content: center;
   margin-top: 40px;
   padding: 20px 0 20px;
-}
-
-.monitor-screen-footer ul {
-  list-style: none;
-}
-
-.monitor-screen-footer li {
-  display: inline-block;
-  margin-right: 40px;
-  position: relative;
-}
-
-.monitor-screen-footer li::after {
-  content: "\25A0";
-  font-size: 14px;
-  position: absolute;
-  right: -25px;
-}
-
-.monitor-screen-footer li:last-child {
-  margin-right: 0;
-}
-
-.monitor-screen-footer li:last-child::after {
-  content: "";
 }
 
 @media (min-width: 576px) {
@@ -164,6 +153,35 @@ a {
     max-width: 1280px;
   }
 }
+
+/* ************************************************************************ */
+
+.horizontal-list {
+  list-style: none;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+
+.horizontal-list li::after {
+  content: "\25A0";
+  font-size: 14px;
+  position: absolute;
+  right: -25px;
+}
+
+.horizontal-list li:last-child {
+  margin-right: 0;
+}
+
+.horizontal-list li:last-child::after {
+  content: "";
+}
+
+/* ************************************************************************ */
 
 /**
  * From https://aleclownes.com/2017/02/01/crt-display.html

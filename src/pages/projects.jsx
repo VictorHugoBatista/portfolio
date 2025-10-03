@@ -5,9 +5,10 @@ import Monitor from '../layout/Monitor';
 function About() {
   return (
     <Monitor>
-      <div className="App">
-        about
-      </div>
+      <section className="monitor-screen-content">
+        <h2>Projetos</h2>
+        EM BREVE
+      </section>
     </Monitor>
   );
 }
