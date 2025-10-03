@@ -2,7 +2,9 @@ function Monitor(props) {
   return (
     <div className="monitor">
       <div className="monitor-screen">
-        {props.children}
+        <main className="monitor-screen-container">
+          {props.children}
+        </main>
       </div>
     </div>
   );

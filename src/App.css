@@ -35,10 +35,19 @@ a {
   background: var(--background-monitor-screen);
   border-radius: 7px;
   box-shadow: inset 1px 1px 7px 7px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
   overflow: auto;
   padding: 25px 5px;
   width: 100%
+}
+
+.monitor-screen-container {
+  display: flex;
+  flex-flow: column;
+  max-width: 1100px;
+  justify-self: center;
 }
 
 .monitor-screen-title {
