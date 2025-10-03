@@ -1,6 +1,6 @@
 import '../App.css';
 
-import Monitor from '../layout/monitor';
+import Monitor from '../layout/Monitor';
 
 function About() {
   return (

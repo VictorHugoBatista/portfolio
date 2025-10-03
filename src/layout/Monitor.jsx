@@ -1,8 +1,9 @@
 function Monitor(props) {
   return (
     <div className="monitor">
-      monitor
-      {props.children}
+      <div className="monitor-screen">
+        {props.children}
+      </div>
     </div>
   );
 }

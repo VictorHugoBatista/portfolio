@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+:root {
+  --background-monitor: #C9C7AF;
+  --background-monitor-screen: #EEF1DB;
+  --foreground: #485B63;
+  --highlight: #f51111;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Bitcount single";
+  font-size: 18px;
+  line-height: 1.5;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+  height: calc(100% - 50px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.monitor {
+  background: var(--background-monitor);
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 25px 40px;
+}
+
+.monitor-screen {
+  background: var(--background-monitor-screen);
+  border-radius: 7px;
+  box-shadow: inset 1px 1px 7px 7px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  overflow: auto;
+  padding: 25px 5px;
+  width: 100%
+}
+
+.monitor-screen-title {
+  border-bottom: solid 4px var(--foreground);
+  margin-bottom: 160px;
+}
+
+.monitor-screen-title h1 {
+  font-family: "Bitcount";
+  font-size: 50px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.monitor-screen-content p {
+  margin-bottom: 10px;
+}
+
+.monitor-screen-jumbotron {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.monitor-screen-jumbotron pre {
+  color: var(--highlight);
+  font-family: "Doto";
+  font-weight: 900;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.monitor-screen-footer {
+  border-top: solid 4px var(--foreground);
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.monitor-screen-footer ul {
+  list-style: none;
+}
+
+.monitor-screen-footer li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+
+.monitor-screen-footer li::after {
+  content: "\25A0";
+  font-size: 14px;
+  position: absolute;
+  right: -25px;
+}
+
+.monitor-screen-footer li:last-child {
+  margin-right: 0;
+}
+
+.monitor-screen-footer li:last-child::after {
+  content: "";
 }
