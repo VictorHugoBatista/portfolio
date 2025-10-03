@@ -156,29 +156,68 @@ a {
 
 /* ************************************************************************ */
 
-.horizontal-list {
-  list-style: none;
+li {
+  list-style: square;
 }
 
-.horizontal-list li {
-  display: inline-block;
-  margin-right: 40px;
-  position: relative;
+@media (min-width: 768px) {
+  .horizontal-list {
+    list-style: none;
+  }
+
+  .horizontal-list li {
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+  }
+
+  .horizontal-list li::after {
+    content: "\25A0";
+    font-size: 14px;
+    position: absolute;
+    right: -25px;
+    top: calc(50% - 10px);
+  }
+
+  .horizontal-list li:last-child {
+    margin-right: 0;
+  }
+
+  .horizontal-list li:last-child::after {
+    content: "";
+  }
 }
 
-.horizontal-list li::after {
-  content: "\25A0";
-  font-size: 14px;
-  position: absolute;
-  right: -25px;
+/* ************************************************************************ */
+
+.media {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.horizontal-list li:last-child {
-  margin-right: 0;
+.media-image {
+  max-width: 500px;
 }
 
-.horizontal-list li:last-child::after {
-  content: "";
+.media-image img {
+  width: 100%;
+}
+
+.media-content {
+  flex: 1;
+  padding-left: 30px;
+}
+
+@media (min-width: 992px) {
+  .media {
+    flex-direction: row;
+  }
+
+  .media-image {
+    width: 500px;
+  }
 }
 
 /* ************************************************************************ */
