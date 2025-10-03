@@ -9,7 +9,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Bitcount single";
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   height: 100vh;
   overflow: hidden;
@@ -194,7 +194,7 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(18, 16, 16, 0.1);
+  background: rgba(18, 16, 16, 0.3);
   opacity: 0;
   z-index: 2;
   pointer-events: none;
