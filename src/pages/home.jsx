@@ -6,15 +6,15 @@ import '../App.css';
 import Monitor from '../layout/Monitor';
 
 function Home() {
-  const [text] = useState(["Fullsatack", "React", "Vue", "Node", "PHP", "Java", "SQL", "NoSQL"]);
+  const [text] = useState(["Tecnologia", "Software", "Solucao", "Qualidade", "Fullstack"]);
   const asciiTextRef = useAsciiText({
     animationCharacters: "▒░█",
     animationCharacterSpacing: 1,
     animationDelay: 2000,
-    animationDirection: "right",
+    animationDirection: "horizontal",
     animationInterval: 100,
     animationLoop: true,
-    animationSpeed: 5,
+    animationSpeed: 3,
     font: colossal,
     text,
   });
@@ -26,7 +26,7 @@ function Home() {
       </header>
       <section className="monitor-screen-content">
         <div className="monitor-screen-jumbotron">
-          <pre className="text-white w-full mx-auto" ref={asciiTextRef} />
+          <pre ref={asciiTextRef} />
         </div>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis magni ducimus vero voluptate tempore eum ex deserunt accusamus, harum ab temporibus pariatur cum officiis, ullam minima voluptatem doloremque id dolorum!</p>
           <p>Voluptas iste magni aliquam voluptatem id odio dolores, excepturi, autem earum architecto, dolor beatae! Atque ipsam nam nisi, commodi repudiandae rerum, expedita fuga ad, maxime inventore explicabo tempore tempora quas.</p>
@@ -41,7 +41,7 @@ function Home() {
       </section>
       <footer className="monitor-screen-footer">
         <ul>
-          <li>Estilizado por Victor Hugo Batista</li>
+          <li>Desenhado por Victor Hugo Batista</li>
           <li><a about="blank" href="https://www.linkedin.com/in/victorhugobatista">LinkedIn</a></li>
           <li><a about="blank" href="https://github.com/VictorHugoBatista">GitHub</a></li>
         </ul>

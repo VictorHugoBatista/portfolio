@@ -32,6 +32,12 @@ a {
 }
 
 .monitor-screen {
+  display: flex;
+  height: 100%;
+  width: 100%
+}
+
+.monitor-screen-inner {
   background: var(--background-monitor-screen);
   border-radius: 7px;
   box-shadow: inset 1px 1px 7px 7px rgba(0,0,0,0.2);
@@ -68,6 +74,7 @@ a {
   color: var(--highlight);
   font-family: "Doto";
   font-weight: 900;
+  margin: 0;
   width: auto;
 }
 
@@ -76,7 +83,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  padding-top: 20px;
+  padding: 20px 0 20px;
 }
 
 .monitor-screen-footer ul {
@@ -151,4 +158,40 @@ a {
   .monitor-screen-container {
     max-width: 1280px;
   }
+}
+
+/**
+ * From https://aleclownes.com/2017/02/01/crt-display.html
+ */
+.crt {
+  position: relative;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.04) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.025), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.01));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 1s infinite;
 }
