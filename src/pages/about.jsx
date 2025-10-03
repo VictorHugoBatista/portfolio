@@ -11,8 +11,10 @@ function About() {
         </div>
 
         <h2>Minha trajetória</h2>
-        <h3>2010-2014: Definição de requisitos</h3>
+        <h3>2010-2015: Definição de requisitos</h3>
         <p>Me apaixonei pelo desenvolvimento de software desde o meu primeiro contato, no curso de Ciência da Computação, em 2010. Desde então não deixei de escrever linhas de código.</p>
+        <p>Na faculdade, tive a base principal da computação, incluindo backend com Java e frontend com JavaScript, base essa que se solidificou mais com alguns freelas que fiz em conjunto com alguns colegas de faculdade e projetos de estudo que realizei antes da próxima etapa.</p>
+        <p>Além disso, também me dediquei à um projeto de estágio ligado à FAPESP enquanto cursava a faculdade, atuando com Internet das Coisas para rastreamento de cargas chamado Loadtrack, usando um framework Java especializado para esse tipo de comunicação descentralizada chamado Linksmart.</p>
 
         <h3>2015:2020: Desenvolvimento</h3>
         <p>Saindo da faculdade, comecei a trabalhar com a criação de sites com Wordpress na Studio Visual. Aceitei o desafio sem ter qualquer experiência com PHP ou Wordpress, mas fazer parte de uma equipe com sede de conhecimento e evolução, logo estava dominando PHP, javascript e CSS e começamos a desafiar os limites do que desenvolvimento Wordpress significa: nós descobrimos o starter theme Sage (um tema Wordpress que já unia várias funcionalidades importantes que só era possível encontrar em frameworks mais modernos, como o Laravel).</p>
@@ -30,7 +32,7 @@ function About() {
         <p>Conheci o Lean Kanban e passei a trabalhar sem as sprints, me adaptando à um novo fluxo de trabalho.</p>
 
         <h3>Futuro</h3>
-        <p>Isso nos leva ao presente e ao futuro: me encontro estudando Java Spring, MongoDB e atualizando meu React web (esse portifólio é um desses exercícios, inclusive!).</p>
+        <p>Isso nos leva ao presente e ao futuro: me encontro voltando ás origens e estudando Java Spring e aprendendo coisas novas, como NoSQL e MongoDB e atualizando meu ReactJS e frontend web em geral (esse portifólio é um desses exercícios, inclusive!).</p>
         <p>Só agora com a necessidade de olhar para trás para atualizar as minhas redes que percebi o tamanho do caminho que percorri para chegar até aqui. Além de muitas linhas de código escritas, muitos deploys feitos, muitos bugs resolvidos, também foram muitos clientes que tiveram sua experiência construída e melhorada pelos times com quem que tive a honra de fazer parte. Tenho muito à agredecer à cada um deles, pelo tanto que pude aprender, para além do que a faculdade ensina e pelas conexões estabelecidas.</p>
         <p>E agora, vamos para o próximo passo?</p>
         <p>Sinta-se livre para me procurar no meu <b><a href="https://www.linkedin.com/in/victorhugobatista">linkedin</a></b> o/</p>
