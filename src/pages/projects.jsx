@@ -1,5 +1,4 @@
 import '../App.css';
-
 import Monitor from '../layout/Monitor';
 
 function About() {
