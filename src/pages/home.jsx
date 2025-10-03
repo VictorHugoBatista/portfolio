@@ -34,7 +34,7 @@ function Home() {
             <p>Mas não tenho medo de código! Comecei a programar em PHP sem saber a linguagem e ingressei no React Native sem estudo prévio e tive sucesso na nas duas tentativas, como você pode ver na <Link to="/minha-trajetoria">minha trajetória completa</Link>!</p>
             {/* <p>Veja meus projetos <Link to="/projects">aqui</Link></p> */}
             <p>Entre em contato pelo <a target="_blank" href="https://www.linkedin.com/in/victorhugobatista">Linkedin</a></p>
-            <p>Perfil do <a target="_blank" href="https://github.com/VictorHugoBatista">github</a></p>
+            <p>Perfil do <a target="_blank" href="https://github.com/VictorHugoBatista">GitHub</a></p>
           </div>
         </div>
         <h2>Curiosidades</h2>
