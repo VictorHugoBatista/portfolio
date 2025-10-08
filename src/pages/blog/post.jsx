@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Markdown from 'react-markdown';
 import { useParams, useNavigate } from 'react-router-dom';
 
 import Monitor from '../../layout/Monitor';
@@ -12,6 +13,7 @@ function BlogPost() {
     title: '',
     date: '',
     tags: [],
+    content: '',
   });
 
   const navigate = useNavigate();
@@ -29,10 +31,16 @@ function BlogPost() {
 
   return (
     <Monitor>
-      <h2>{post.title}</h2>
-      <SerialContentDetails post={post} />
+      <article>
+        <h2>{post.title}</h2>
+        <SerialContentDetails post={post} />
 
-      conteudo
+        <div className="serial-content-content">
+          <Markdown>
+            {post.content}
+          </Markdown>
+        </div>
+      </article>
     </Monitor>
   );
 }
