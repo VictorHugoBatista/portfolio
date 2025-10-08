@@ -13,7 +13,7 @@ function SerialContentListItem ({ post: { link, title, date, tags } }) {
           </div>
           <ul className="serial-content-list-item-tags">
             {tags.map(tag => (
-              <li key={tag}><span class={"pill"}>{tag}</span></li>
+              <li key={tag}><span className={"pill"}>{tag}</span></li>
             ))}
           </ul>
         </div>

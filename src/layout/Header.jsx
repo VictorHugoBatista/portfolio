@@ -6,7 +6,7 @@ function Header() {
         <div className="monitor-screen-title">
           <h1>Victor Hugo Batista</h1>
         </div>
-        <nav class="monitor-screen-top-nav">
+        <nav className="monitor-screen-top-nav">
           <ul className="horizontal-list">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/minha-trajetoria">Minha trajetória</Link></li>

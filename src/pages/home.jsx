@@ -14,10 +14,10 @@ function Home() {
         </div>
 
         <div className="media">
-          <div class="media-image">
+          <div className="media-image">
             <img src={photograph} alt="Victor Hugo Batista" />
           </div>
-          <div class="media-content">
+          <div className="media-content">
             <h2>Resumo</h2>
             <p>Sou um desenvolvedor full stack com 10 anos de experiência, minhas principais competências são:</p>
             <ul>
