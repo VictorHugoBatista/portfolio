@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { colossal, cyberlarge, stickLetters, mini, useAsciiText } from "react-ascii-text";
 

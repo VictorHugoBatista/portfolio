@@ -6,6 +6,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
 import Projects from './pages/projects';
+import BlogList from "./pages/blog/list";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/minha-trajetoria" element={<About />} />
+          <Route path="/blog" element={<BlogList />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </HashRouter>
