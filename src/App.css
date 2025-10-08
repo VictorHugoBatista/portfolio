@@ -62,7 +62,6 @@ a {
 }
 
 .monitor-screen-main-header {
-  margin-bottom: 160px;
   text-align: right;
 }
 
@@ -86,6 +85,7 @@ a {
 .monitor-screen-jumbotron {
   display: flex;
   justify-content: center;
+  margin-top: 160px;
 }
 
 .monitor-screen-jumbotron pre {
@@ -164,7 +164,7 @@ a {
 
 /* ************************************************************************ */
 
-li {
+ul {
   list-style: square;
 }
 
@@ -330,3 +330,7 @@ li {
   pointer-events: none;
   animation: flicker 1s infinite;
 }
+
+/* ************************************************************************ */
+
+@import "styles/serial-content.css";
