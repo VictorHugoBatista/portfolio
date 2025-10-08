@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import Monitor from '../../layout/Monitor';
 import SerialContentDetails from '../../components/serial-content/serial-content-details';
@@ -14,10 +14,13 @@ function BlogPost() {
     tags: [],
   });
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     const postObject = getPost(link);
 
     if (! postObject) {
+      navigate('/not-found')
       return;
     }
 

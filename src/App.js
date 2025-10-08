@@ -8,6 +8,7 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import BlogList from "./pages/blog/list";
 import BlogPost from "./pages/blog/post";
+import NotFoundPage from './pages/not-found-page';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:link" element={<BlogPost />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </HashRouter>
     </>
