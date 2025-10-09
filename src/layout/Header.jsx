@@ -12,8 +12,8 @@ function Header() {
             <li><Link to="/minha-trajetoria">Minha trajetória</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             {/* <li><Link to="/projects">Projetos</Link></li> */}
-            <li><a target="_blank" href="https://www.linkedin.com/in/victorhugobatista">Linkedin</a></li>
-            <li><a target="_blank" href="https://github.com/VictorHugoBatista">Github</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/victorhugobatista">Linkedin</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/VictorHugoBatista">Github</a></li>
           </ul>
         </nav>
       </header>
