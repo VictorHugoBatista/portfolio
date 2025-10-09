@@ -62,7 +62,7 @@ export const blog = [
 do ReactJS. Minha primeira iniciativa foi seguir com meus projetos de construir meu
 site pessoal, com blog de tecnologia e portfólio. Inclusive, esse é o resultado parcial
 dessa meta! Ainda pretendo falar mais sobre as minhas escolhas sobre esse layout, mas
-isso é outra história, porque hoje é dia para falar sobre meu segundo projet: refazer SpeedSnake - o snake
+isso é outra história, porque hoje é dia para falar sobre meu segundo projeto: refazer SpeedSnake - o snake
 game que eu desenvolvi dez anos atrás. Jogo esse que me ajudou a garantir uma indicação
 para meu primeiro trabalho de programação integral!
 
@@ -107,7 +107,7 @@ e foi isso que eu tentei alcançar com esse novo visual do jogo.
 *Imagem: Futuro utópico sonhado em meados dos anos 2000. [Aesthetics Wiki](https://aesthetics.fandom.com/wiki/Frutiger_Aero)*
 
 Sem querer, acabei por usar as cores da abertura de algumas temporadas antigas da série/novela Malhação,
-(transmitida na TV Globo entre 1995 e 2020), o subconsciente támbém tem dessas, né. Espero que você
+(transmitida na TV Globo entre 1995 e 2020), o subconsciente também tem dessas, né. Espero que você
 sinta a mesma nostalgia ao jogar que eu senti ao construir esse jogo.
 
 ![Versão nova do jogo](${newSpeedSnakeGameImage})
@@ -135,7 +135,7 @@ mais reusável e pronta para novas funcionalidades.
 ### As regras do jogo
 
 O jogo em si foi implementado no diretório [/game](https://github.com/VictorHugoBatista/SpeedSnake/tree/master/src/game)
-(com exceção dos hooks). Mais específicamente, a lógica pesada ficou inteira nos estados do Zustand: o jogo conta com
+(com exceção dos hooks). Mais especificamente, a lógica pesada ficou inteira nos estados do Zustand: o jogo conta com
 o estado principal \`gameArea\`, que une todos os elementos que serão exibidos no canvas, e separado, os estados das
 divisões do personagem e a comida, para facilitar os calculos dos passos: \`snake\` e \`food\`. Isso facilita
 a renderização de formas diferentes para tipos diferentes de entidades, além da futura adição de tipos de entidades diferentes!
@@ -145,7 +145,7 @@ até o tempo para a execução da nova iteração chegar (constante \`iterationT
 implementado no timer exibido antes do jogo (claramente inspirado nos jogos do Megaman). O loop do jogo, além de outras
 coisas, estão implementados como hooks do React.
 
-Não vou me ater à mais detalhes técnicos, dado que o código é aberto: é possível visualizar, executar no seu local e até
+Não vou me ater a mais detalhes técnicos, dado que o código é aberto: é possível visualizar, executar no seu local e até
 mesmo fazer um fork! (por isso git é minha ferramenta favorita de todos os tempos, junto do terminal Linux)
 
 O que eu posso dizer é que já existem novos passos à serem feitos, tanto em novas funcionalidades como em refatoração
