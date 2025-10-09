@@ -57,6 +57,11 @@
   margin-top: 30px;
 }
 
+.serial-content-content img {
+  max-width: 900px;
+  width: 100%;
+}
+
 .serial-content-content code {
   background-color: var(--text-code-background);
   border: 1px solid var(--text-code-border);
