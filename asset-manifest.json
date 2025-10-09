@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.39b55211.css",
-    "main.js": "/portfolio/static/js/main.ede4aaa8.js",
+    "main.css": "/portfolio/static/css/main.e7884552.css",
+    "main.js": "/portfolio/static/js/main.924bc946.js",
     "static/js/453.f7f64cf1.chunk.js": "/portfolio/static/js/453.f7f64cf1.chunk.js",
     "static/media/photograth.png": "/portfolio/static/media/photograth.987013e1f4e6717445b4.png",
+    "static/media/frutiger-eco.png": "/portfolio/static/media/frutiger-eco.ed38dc2df86e0c2e16ee.png",
+    "static/media/new-speed-snake-game.jpg": "/portfolio/static/media/new-speed-snake-game.141d1036a19d1a7e30b3.jpg",
+    "static/media/old-speed-snake-game.jpg": "/portfolio/static/media/old-speed-snake-game.f1da05fc0a7166d34b5c.jpg",
     "index.html": "/portfolio/index.html",
-    "main.39b55211.css.map": "/portfolio/static/css/main.39b55211.css.map",
-    "main.ede4aaa8.js.map": "/portfolio/static/js/main.ede4aaa8.js.map",
+    "main.e7884552.css.map": "/portfolio/static/css/main.e7884552.css.map",
+    "main.924bc946.js.map": "/portfolio/static/js/main.924bc946.js.map",
     "453.f7f64cf1.chunk.js.map": "/portfolio/static/js/453.f7f64cf1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39b55211.css",
-    "static/js/main.ede4aaa8.js"
+    "static/css/main.e7884552.css",
+    "static/js/main.924bc946.js"
   ]
 }
