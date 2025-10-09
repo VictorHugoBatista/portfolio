@@ -27,7 +27,7 @@ function BlogPost() {
     }
 
     setPost(postObject);
-  }, [link])
+  }, [link, navigate])
 
   return (
     <Monitor>
