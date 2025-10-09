@@ -11,15 +11,15 @@ export const blog = [
 //       'Estilo de vida',
 //       'Hobbies',
 //     ],
-//     content: `***Lorem Ipsum***
+//     content: `### Lorem Ipsum
 //
 // Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
 //
-// ***nova sessão***
+// ### nova sessão
 //
 // Teste Sessão
 //
-// ***minha lista***
+// ### minha lista
 //
 //  - primeiro
 //  - segundo
@@ -34,15 +34,15 @@ export const blog = [
 //       'Devlog',
 //       'Spring Boot',
 //     ],
-//     content: `***Lorem Ipsum***
+//     content: `### Lorem Ipsum
 //
 // Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
 //
-// ***nova sessão***
+// ### nova sessão
 //
 // Teste Sessão
 //
-// ***minha lista***
+// ### minha lista
 //
 //  - primeiro
 //  - segundo
@@ -65,9 +65,9 @@ dessa meta! Ainda pretendo falar mais sobre as minhas escolhas sobre esse layout
 isso é outra história, porque hoje é dia para falar sobre meu segundo projet: refazer SpeedSnake - o snake
 game que eu desenvolvi dez anos atrás. Jogo esse que me ajudou a garantir uma indicação
 para meu primeiro trabalho de programação integral!
-    
-***Encontrando o futuro no passado***
-    
+
+### Encontrando o futuro no passado
+
 Enquanto voltava aos meus repositórios antigos do github, me lembrei do jogo que desenvolvi anos
 atrás e decidi tornar ele acessível novamente, mas dessa vez no Github Pages.
 
@@ -86,11 +86,11 @@ de 2023 da CNN Brasil, mais de 92 milhões de brasileiros acessam a internet ape
 
 ![Versão de 2015 do jogo](${oldSpeedSnakeGameImage})
 
-*Versão de 2015 do jogo*
+**Versão de 2015 do jogo**
 
 Movido por tudo isso, criei o objetivo de refazer o jogo em React, fazendo melhorias técnicas e alterando o layout.
 
-***Cara e coração***
+### Cara e coração
 
 Aparência comunica mais do que palavras. Por exemplo, dá para perceber apenas por esse site
 o quanto eu gosto de temas retrô e layouts que representem uma ideia. E foi exatamente o que
@@ -104,7 +104,7 @@ e foi isso que eu tentei alcançar com esse novo visual do jogo.
 
 ![Futuro utópico sonhado nos anos 2000](${frutigerEcoImage})
 
-*Futuro utópico sonhado em meados dos anos 2000. [Aesthetics Wiki](https://aesthetics.fandom.com/wiki/Frutiger_Aero)*
+**Futuro utópico sonhado em meados dos anos 2000. [Aesthetics Wiki](https://aesthetics.fandom.com/wiki/Frutiger_Aero)**
 
 Sem querer, acabei por usar as cores da abertura de algumas temporadas antigas da série/novela Malhação,
 (transmitida na TV Globo entre 1995 e 2020), o subconsciente támbém tem dessas, né. Espero que você
@@ -112,9 +112,9 @@ sinta a mesma nostalgia ao jogar que eu senti ao construir esse jogo.
 
 ![Versão nova do jogo](${newSpeedSnakeGameImage})
 
-*Versão nova do jogo*
+**Versão nova do jogo**
 
-***Construção e ferramentas***
+### Construção e ferramentas
 
 Agora vamos às ferramentas utilizadas. Primeiro, vamos dar um passo atrás e falar da versão de 2015: ela foi
 feita com HTML, jQuery e CSS. Direto ao ponto. Além disso, baixei as libs [Ion Sound](https://github.com/IonDen/ion.sound)
@@ -132,7 +132,7 @@ com pacotes específicos disponíveis para React, Vue Angular e Svelte) e o [Zus
 (lib que implementa uma solução de gerenciamento de estados globais e HTTP). Unindo todos esses elementos, uma lógica
 mais reusável e pronta para novas funcionalidades.
 
-***As regras do jogo***
+### As regras do jogo
 
 O jogo em si foi implementado no diretório [/game](https://github.com/VictorHugoBatista/SpeedSnake/tree/master/src/game)
 (com exceção dos hooks). Mais específicamente, a lógica pesada ficou inteira nos estados do Zustand: o jogo conta com
@@ -151,7 +151,7 @@ mesmo fazer um fork! (por isso git é minha ferramenta favorita de todos os temp
 O que eu posso dizer é que já existem novos passos à serem feitos, tanto em novas funcionalidades como em refatoração
 de código.
 
-***Próximos passos***
+### Próximos passos
 
 Para ser sincero, não sei se gostaria de voltar com um sistema de pontuação (opinião polêmica?). Porém, vou implementar
 um sistema de seleção de labirintos, além de aumentar a dificuldade progressivamente com o avanço do jogo e
