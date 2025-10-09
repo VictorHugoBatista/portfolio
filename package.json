@@ -1,6 +1,6 @@
 {
   "name": "teste",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "homepage": "https://VictorHugoBatista.github.io/portfolio/",
   "dependencies": {
@@ -13,6 +13,7 @@
     "react-ascii-text": "^0.0.4",
     "react-dom": "^19.2.0",
     "react-google-font": "^1.1.0",
+    "react-markdown": "^10.1.0",
     "react-router-dom": "^7.9.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"

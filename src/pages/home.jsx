@@ -14,10 +14,10 @@ function Home() {
         </div>
 
         <div className="media">
-          <div class="media-image">
+          <div className="media-image">
             <img src={photograph} alt="Victor Hugo Batista" />
           </div>
-          <div class="media-content">
+          <div className="media-content">
             <h2>Resumo</h2>
             <p>Sou um desenvolvedor full stack com 10 anos de experiência, minhas principais competências são:</p>
             <ul>
@@ -32,9 +32,10 @@ function Home() {
               <li><b>Idiomas</b>: Inglês intermediário</li>
             </ul>
             <p>Mas não tenho medo de código! Comecei a programar em PHP sem saber a linguagem e ingressei no React Native sem estudo prévio e tive sucesso na nas duas tentativas, como você pode ver na <Link to="/minha-trajetoria">minha trajetória completa</Link>!</p>
-            {/* <p>Veja meus projetos <Link to="/projects">aqui</Link></p> */}
-            <p>Entre em contato pelo <a target="_blank" href="https://www.linkedin.com/in/victorhugobatista">Linkedin</a></p>
-            <p>Perfil do <a target="_blank" href="https://github.com/VictorHugoBatista">GitHub</a></p>
+            <p>Leia meis artigos <Link to="/blog">aqui</Link>.</p>
+            {/* <p>Veja meus projetos <Link to="/projects">aqui</Link>.</p> */}
+            <p>Entre em contato pelo <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/victorhugobatista">Linkedin</a></p>
+            <p>Perfil do <a target="_blank" rel="noreferrer" href="https://github.com/VictorHugoBatista">GitHub</a></p>
           </div>
         </div>
         <h2>Curiosidades</h2>
