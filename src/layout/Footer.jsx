@@ -3,7 +3,7 @@ function Footer() {
     <footer className="monitor-screen-footer">
       <ul className="horizontal-list">
         <li>© {new Date().getFullYear()}</li>
-        <li>Beta v0.1</li>
+        <li>v0.2.0</li>
         <li>Desenhado por Victor Hugo Batista</li>
         <li><a target="_blank" href="https://www.linkedin.com/in/victorhugobatista">LinkedIn</a></li>
         <li><a target="_blank" href="https://github.com/VictorHugoBatista">GitHub</a></li>
