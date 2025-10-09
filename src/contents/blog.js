@@ -1,3 +1,7 @@
+import newSpeedSnakeGameImage from "../images/content/new-speed-snake-game.jpg";
+import oldSpeedSnakeGameImage from "../images/content/old-speed-snake-game.jpg";
+import frutigerEcoImage from "../images/content/frutiger-eco.png";
+
 export const blog = [
 //   {
 //     link: 'cubos-magicos',
@@ -46,8 +50,8 @@ export const blog = [
 // `,
 //   },
   {
-    link: 'desenvolvendo-meu-site-em-react',
-    title: 'Desenvolvendo meu jogo',
+    link: 'desenvolvi-um-jogo-e-aqui-esta=o-processo',
+    title: 'Desenvolvi um jogo e aqui está o processo',
     date: '08/10/2025',
     tags: [
       'Devlog',
@@ -80,8 +84,9 @@ aquele código ultrapassado, aquele layout sem responsividade. 2015 era outro mu
 Segundo uma [notícia](https://www.cnnbrasil.com.br/tecnologia/mais-de-92-milhoes-de-brasileiros-acessam-a-internet-apenas-pelo-celular-diz-pesquisa/)
 de 2023 da CNN Brasil, mais de 92 milhões de brasileiros acessam a internet apenas por celular. Não dá mais para ignorar isso.
 
-[PRINT DO JOGO ANTIGO]
-[Versão de 2015 do Speed Snake]
+![Versão de 2015 do jogo](${oldSpeedSnakeGameImage})
+
+*Versão de 2015 do jogo*
 
 Movido por tudo isso, criei o objetivo de refazer o jogo em React, fazendo melhorias técnicas e alterando o layout.
 
@@ -97,15 +102,17 @@ Porém, eu gostaria das cores, as formas arredondadas, as transparências, e a e
 melhor que futurismo dos anos 2000 proporcionava (pesquise sobre Solarpunk e Frutiger Aero Aero),
 e foi isso que eu tentei alcançar com esse novo visual do jogo.
 
-[IMAGEM FRUTIGER AERO SOLAR PUNK]
-[Futuro utópico sonhado nos anos 2000]
+![Futuro utópico sonhado nos anos 2000](${frutigerEcoImage})
+
+*Futuro utópico sonhado em meados dos anos 2000. [Aesthetics Wiki](https://aesthetics.fandom.com/wiki/Frutiger_Aero)*
 
 Sem querer, acabei por usar as cores da abertura de algumas temporadas antigas da série/novela Malhação,
 (transmitida na TV Globo entre 1995 e 2020), o subconsciente támbém tem dessas, né. Espero que você
 sinta a mesma nostalgia ao jogar que eu senti ao construir esse jogo.
 
-[PRINT DO JOGO NOVO]
-[Versão nova do Speed Snake]
+![Versão nova do jogo](${newSpeedSnakeGameImage})
+
+*Versão nova do jogo*
 
 ***Construção e ferramentas***
 
