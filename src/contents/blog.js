@@ -50,7 +50,7 @@ export const blog = [
 // `,
 //   },
   {
-    link: 'desenvolvi-um-jogo-e-aqui-esta=o-processo',
+    link: 'desenvolvi-um-jogo-e-aqui-esta-o-processo',
     title: 'Desenvolvi um jogo e aqui está o processo',
     date: '08/10/2025',
     tags: [
@@ -86,7 +86,7 @@ de 2023 da CNN Brasil, mais de 92 milhões de brasileiros acessam a internet ape
 
 ![Versão de 2015 do jogo](${oldSpeedSnakeGameImage})
 
-**Versão de 2015 do jogo**
+*Imagem: Versão de 2015 do jogo*
 
 Movido por tudo isso, criei o objetivo de refazer o jogo em React, fazendo melhorias técnicas e alterando o layout.
 
@@ -104,7 +104,7 @@ e foi isso que eu tentei alcançar com esse novo visual do jogo.
 
 ![Futuro utópico sonhado nos anos 2000](${frutigerEcoImage})
 
-**Futuro utópico sonhado em meados dos anos 2000. [Aesthetics Wiki](https://aesthetics.fandom.com/wiki/Frutiger_Aero)**
+*Imagem: Futuro utópico sonhado em meados dos anos 2000. [Aesthetics Wiki](https://aesthetics.fandom.com/wiki/Frutiger_Aero)*
 
 Sem querer, acabei por usar as cores da abertura de algumas temporadas antigas da série/novela Malhação,
 (transmitida na TV Globo entre 1995 e 2020), o subconsciente támbém tem dessas, né. Espero que você
@@ -112,7 +112,7 @@ sinta a mesma nostalgia ao jogar que eu senti ao construir esse jogo.
 
 ![Versão nova do jogo](${newSpeedSnakeGameImage})
 
-**Versão nova do jogo**
+*Imagem: Versão nova do jogo*
 
 ### Construção e ferramentas
 
