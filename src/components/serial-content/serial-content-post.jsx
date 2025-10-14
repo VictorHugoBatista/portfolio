@@ -1,31 +1,11 @@
-import { useEffect, useState } from 'react';
 import Markdown from 'react-markdown';
-import { useNavigate } from 'react-router-dom';
 
 import SerialContentDetails from './layout/serial-content-details';
 
-import { getPost } from '../../contents/blog';
+import useGetPost from './hooks/get-post';
 
 function SerialCotentPost({ postLink }) {
-  const [post, setPost] = useState({
-    title: '',
-    date: '',
-    tags: [],
-    content: '',
-  });
-
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const postObject = getPost(postLink);
-
-    if (! postObject) {
-      navigate('/not-found')
-      return;
-    }
-
-    setPost(postObject);
-  }, [postLink, navigate]);
+  const post = useGetPost(postLink);
 
   return (
     <article>
