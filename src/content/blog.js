@@ -29,13 +29,3 @@ export const blog = [
     ],
   },
 ];
-
-export const getPost = link => {
-  const [ post ] = blog
-    .filter(post => post.link === link);
-  if (! post) {
-    return null;
-  }
-
-  return post;
-};

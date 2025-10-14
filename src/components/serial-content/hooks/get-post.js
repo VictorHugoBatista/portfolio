@@ -1,7 +1,17 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { getPost } from '../../../content/blog';
+import { blog } from '../../../content/blog';
+
+const getPost = (link) => {
+  const [ post ] = blog
+    .filter(post => post.link === link);
+  if (! post) {
+    return null;
+  }
+
+  return post;
+};
 
 const useGetPost = (postLink) => {
   const [post, setPost] = useState({
