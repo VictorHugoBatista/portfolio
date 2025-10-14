@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Markdown from 'react-markdown';
 import { useNavigate } from 'react-router-dom';
 
-import SerialContentDetails from '../../components/serial-content/serial-content-details';
+import SerialContentDetails from './layout/serial-content-details';
 
 import { getPost } from '../../contents/blog';
 
