@@ -76,12 +76,12 @@ mais reusável e pronta para novas funcionalidades.
 
 O jogo em si foi implementado no diretório [/game](https://github.com/VictorHugoBatista/SpeedSnake/tree/master/src/game)
 (com exceção dos hooks). Mais especificamente, a lógica pesada ficou inteira nos estados do Zustand: o jogo conta com
-o estado principal \`gameArea\`, que une todos os elementos que serão exibidos no canvas, e separado, os estados das
-divisões do personagem e a comida, para facilitar os calculos dos passos: \`snake\` e \`food\`. Isso facilita
+o estado principal `gameArea`, que une todos os elementos que serão exibidos no canvas, e separado, os estados das
+divisões do personagem e a comida, para facilitar os calculos dos passos: `snake` e `food`. Isso facilita
 a renderização de formas diferentes para tipos diferentes de entidades, além da futura adição de tipos de entidades diferentes!
 
-Além disso, agora o FPS é separado das iterações do jogo. O estado \`gameLoopIterationTimeAccumulator\` vai acumulando
-até o tempo para a execução da nova iteração chegar (constante \`iterationTimeInMilliseconds\`). Algo parecido foi
+Além disso, agora o FPS é separado das iterações do jogo. O estado `gameLoopIterationTimeAccumulator` vai acumulando
+até o tempo para a execução da nova iteração chegar (constante `iterationTimeInMilliseconds`). Algo parecido foi
 implementado no timer exibido antes do jogo (claramente inspirado nos jogos do Megaman). O loop do jogo, além de outras
 coisas, estão implementados como hooks do React.
 
