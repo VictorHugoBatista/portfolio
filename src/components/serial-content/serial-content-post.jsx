@@ -15,6 +15,13 @@ function SerialCotentPost({ postLink }) {
       <SerialContentDetails post={post} />
 
       <div className="serial-content-content">
+        <div className="content-loading-wrapper">
+          <div className="content-loading">
+            <span className="content-loading-bar"></span>
+            <span className="content-loading-bar"></span>
+            <span className="content-loading-bar"></span>
+          </div>
+        </div>
         <Markdown>{content}</Markdown>
       </div>
     </article>

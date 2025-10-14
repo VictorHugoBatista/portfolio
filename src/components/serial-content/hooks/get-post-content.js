@@ -4,11 +4,10 @@ const useGetPostContent = (postLink) => {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    const loadContent = async () => {
-      const response = await fetch(`/content/markdown/${postLink}.md`);
-      response.text().then(content => setContent(content));
-    };
-    loadContent();
+    fetch(`/content/markdown/${postLink}.md`)
+      .then(response => {
+        response.text().then(content => setContent(content));
+      });
   }, [postLink, setContent]);
 
   return content;
