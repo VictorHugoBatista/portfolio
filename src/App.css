@@ -287,7 +287,8 @@ ul {
 
 /**
  * From https://aleclownes.com/2017/02/01/crt-display.html
- */@keyframes flicker {
+ */
+@keyframes flicker {
   0% {
   opacity: 0.27861;
   }
