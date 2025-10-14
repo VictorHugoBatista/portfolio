@@ -8,7 +8,6 @@ const useGetPost = (postLink) => {
     title: '',
     date: '',
     tags: [],
-    content: '',
   });
 
   const navigate = useNavigate();
