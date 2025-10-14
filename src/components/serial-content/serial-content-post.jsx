@@ -1,23 +1,13 @@
-import { useEffect, useState } from 'react';
-
 import Markdown from 'react-markdown';
 
 import SerialContentDetails from './layout/serial-content-details';
 
 import useGetPost from './hooks/get-post';
+import useGetPostContent from './hooks/get-post-content';
 
 function SerialCotentPost({ postLink }) {
   const post = useGetPost(postLink);
-
-  const [content, setContent] = useState('teste');
-
-  useEffect(() => {
-    const loadContent = async () => {
-      const response = await fetch(`/content/markdown/${postLink}.md`);
-      response.text().then(content => setContent(content));
-    };
-    loadContent();
-  }, [postLink, setContent]);
+  const content = useGetPostContent(postLink);
 
   return (
     <article>

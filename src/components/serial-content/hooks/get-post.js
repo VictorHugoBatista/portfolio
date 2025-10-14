@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { blog } from '../../../content/blog';
 
+// @todo get post from other content types (project, for example).
 const getPost = (link) => {
   const [ post ] = blog
     .filter(post => post.link === link);
