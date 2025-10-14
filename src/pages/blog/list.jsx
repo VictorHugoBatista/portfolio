@@ -1,7 +1,7 @@
 import '../../App.css';
 import Monitor from '../../layout/Monitor';
 import SerialContentList from '../../components/serial-content/serial-content-list';
-import { blog } from '../../contents/blog';
+import { blog } from '../../content/blog';
 
 function BlogList() {
   return (

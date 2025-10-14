@@ -1,64 +1,4 @@
-import newSpeedSnakeGameImage from "../images/content/new-speed-snake-game.jpg";
-import oldSpeedSnakeGameImage from "../images/content/old-speed-snake-game.jpg";
-import frutigerEcoImage from "../images/content/frutiger-eco.png";
-
-export const blog = [
-//   {
-//     link: 'cubos-magicos',
-//     title: 'Cubos mágicos',
-//     date: '08/10/2025',
-//     tags: [
-//       'Estilo de vida',
-//       'Hobbies',
-//     ],
-//     content: `### Lorem Ipsum
-//
-// Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
-//
-// ### nova sessão
-//
-// Teste Sessão
-//
-// ### minha lista
-//
-//  - primeiro
-//  - segundo
-//  - terceiro
-// `,
-//   },
-//   {
-//     link: 'redescobrindo-o-java',
-//     title: 'Redescobrindo o Java',
-//     date: '08/10/2025',
-//     tags: [
-//       'Devlog',
-//       'Spring Boot',
-//     ],
-//     content: `### Lorem Ipsum
-//
-// Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
-//
-// ### nova sessão
-//
-// Teste Sessão
-//
-// ### minha lista
-//
-//  - primeiro
-//  - segundo
-//  - terceiro
-// `,
-//   },
-  {
-    link: 'desenvolvi-um-jogo-e-aqui-esta-o-processo',
-    title: 'Desenvolvi um jogo e aqui está o processo',
-    date: '08/10/2025',
-    tags: [
-      'Devlog',
-      'Tecnologia',
-      'React',
-    ],
-    content: `Desde que voltei ao desenvolvimento web, venho me atualizando com o estado
+Desde que voltei ao desenvolvimento web, venho me atualizando com o estado
 do ReactJS. Minha primeira iniciativa foi seguir com meus projetos de construir meu
 site pessoal, com blog de tecnologia e portfólio. Inclusive, esse é o resultado parcial
 dessa meta! Ainda pretendo falar mais sobre as minhas escolhas sobre esse layout, mas
@@ -84,7 +24,7 @@ aquele código ultrapassado, aquele layout sem responsividade. 2015 era outro mu
 Segundo uma [notícia](https://www.cnnbrasil.com.br/tecnologia/mais-de-92-milhoes-de-brasileiros-acessam-a-internet-apenas-pelo-celular-diz-pesquisa/)
 de 2023 da CNN Brasil, mais de 92 milhões de brasileiros acessam a internet apenas por celular. Não dá mais para ignorar isso.
 
-![Versão de 2015 do jogo](${oldSpeedSnakeGameImage})
+![Versão de 2015 do jogo](/portfolio/content/image/old-speed-snake-game.jpg)
 
 *Imagem: Versão de 2015 do jogo*
 
@@ -102,7 +42,7 @@ Porém, eu gostaria das cores, as formas arredondadas, as transparências, e a e
 melhor que futurismo dos anos 2000 proporcionava (pesquise sobre Solarpunk e Frutiger Aero Aero),
 e foi isso que eu tentei alcançar com esse novo visual do jogo.
 
-![Futuro utópico sonhado nos anos 2000](${frutigerEcoImage})
+![Futuro utópico sonhado nos anos 2000](/portfolio/content/image/frutiger-eco.png)
 
 *Imagem: Futuro utópico sonhado em meados dos anos 2000. [Aesthetics Wiki](https://aesthetics.fandom.com/wiki/Frutiger_Aero)*
 
@@ -110,7 +50,7 @@ Sem querer, acabei por usar as cores da abertura de algumas temporadas antigas d
 (transmitida na TV Globo entre 1995 e 2020), o subconsciente também tem dessas, né. Espero que você
 sinta a mesma nostalgia ao jogar que eu senti ao construir esse jogo.
 
-![Versão nova do jogo](${newSpeedSnakeGameImage})
+![Versão nova do jogo](/portfolio/content/image/new-speed-snake-game.jpg)
 
 *Imagem: Versão nova do jogo*
 
@@ -136,12 +76,12 @@ mais reusável e pronta para novas funcionalidades.
 
 O jogo em si foi implementado no diretório [/game](https://github.com/VictorHugoBatista/SpeedSnake/tree/master/src/game)
 (com exceção dos hooks). Mais especificamente, a lógica pesada ficou inteira nos estados do Zustand: o jogo conta com
-o estado principal \`gameArea\`, que une todos os elementos que serão exibidos no canvas, e separado, os estados das
-divisões do personagem e a comida, para facilitar os calculos dos passos: \`snake\` e \`food\`. Isso facilita
+o estado principal `gameArea`, que une todos os elementos que serão exibidos no canvas, e separado, os estados das
+divisões do personagem e a comida, para facilitar os calculos dos passos: `snake` e `food`. Isso facilita
 a renderização de formas diferentes para tipos diferentes de entidades, além da futura adição de tipos de entidades diferentes!
 
-Além disso, agora o FPS é separado das iterações do jogo. O estado \`gameLoopIterationTimeAccumulator\` vai acumulando
-até o tempo para a execução da nova iteração chegar (constante \`iterationTimeInMilliseconds\`). Algo parecido foi
+Além disso, agora o FPS é separado das iterações do jogo. O estado `gameLoopIterationTimeAccumulator` vai acumulando
+até o tempo para a execução da nova iteração chegar (constante `iterationTimeInMilliseconds`). Algo parecido foi
 implementado no timer exibido antes do jogo (claramente inspirado nos jogos do Megaman). O loop do jogo, além de outras
 coisas, estão implementados como hooks do React.
 
@@ -169,22 +109,10 @@ Agora seguem os links do jogo no girhub pages e do repositório em si:
  - [Jogo no github pages](https://victorhugobatista.github.io/SpeedSnake/)
  - [Repositório](https://github.com/VictorHugoBatista/SpeedSnake)
  
- Obrigado e até mais o/
+Obrigado e até mais o/
  
- --------
+--------
  
- PS: Não mencionei, mas é possível jogar a versão antiga de 2015 ao clicar no link Legacy, no header o/
+PS: Não mencionei, mas é possível jogar a versão antiga de 2015 ao clicar no link Legacy, no header o/
  
- PS2: Existe uma regra base que mudou entre as duas versões, jogue e descobra!`,
-  },
-];
-
-export const getPost = link => {
-  const [ post ] = blog
-    .filter(post => post.link === link);
-  if (! post) {
-    return null;
-  }
-
-  return post;
-};
+PS2: Existe uma regra base que mudou entre as duas versões, jogue e descobra!

@@ -1,4 +1,4 @@
-import SerialContentListItem from "./serial-content-list-item";
+import SerialContentListItem from "./layout/serial-content-list-item";
 
 function SerialContentList({ contentList }) {
   return (

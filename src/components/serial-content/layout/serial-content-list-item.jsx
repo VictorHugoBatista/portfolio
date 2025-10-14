@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import SerialContentDetails from "./serial-content-details"
+import SerialContentDetails from "./serial-content-details";
 
 function SerialContentListItem ({ post }) {
   const { link, title } = post;
