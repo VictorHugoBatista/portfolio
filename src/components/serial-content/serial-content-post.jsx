@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import Markdown from 'react-markdown';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import SerialContentDetails from '../../components/serial-content/serial-content-details';
 
 import { getPost } from '../../contents/blog';
 
-function SerialCotentPost() {
-  const { link } = useParams();
+function SerialCotentPost({ postLink }) {
   const [post, setPost] = useState({
     title: '',
     date: '',
@@ -18,7 +17,7 @@ function SerialCotentPost() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const postObject = getPost(link);
+    const postObject = getPost(postLink);
 
     if (! postObject) {
       navigate('/not-found')
@@ -26,7 +25,7 @@ function SerialCotentPost() {
     }
 
     setPost(postObject);
-  }, [link, navigate]);
+  }, [postLink, navigate]);
 
   return (
     <article>
