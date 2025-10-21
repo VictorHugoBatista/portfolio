@@ -1,4 +1,4 @@
-Como falado no [post anterior](/portfolio/#/blog/desenvolvi-um-jogo-e-aqui-esta-o-processo), vou falar hoje sobre o processo de criação desse site, além da solução de gerenciamento de conteúdos adotada para a página do blog e a futura página de projetos. Aperte os cintos para mais uma viagem pelo ciberespaço.
+Como falado no [post anterior](/portfolio/#/blog/desenvolvi-um-jogo-e-aqui-esta-o-processo), vou falar hoje sobre o processo de criação desse site, além da solução de gerenciamento de conteúdos adotada para a página do blog e a futura página de projetos. Aperte os cintos para mais uma viagem pelo ciberespaço!
 
 ### Descobrindo minha necessidade
 
