@@ -16,6 +16,7 @@ Site pessoal (portfólio + blog) em React com Create React App, publicado no Git
 ## Regras de git e deploy — leia antes de qualquer operação
 
 - **PODE**: criar *branches* e commitar à vontade, seguindo as convenções abaixo.
+- **NUNCA commite direto na `main`.** Toda mudança — código, conteúdo ou documentação — nasce em uma *branch* própria e segue o fluxo de *merge* feito pelo dono. A `main` local só avança por *merge*; mudança direta nela não existe.
 - **NUNCA faça push.** Nem `git push`, nem com `--force`, `--force-with-lease` ou qualquer variante. Sem exceção.
 - **NUNCA execute deploy.** Isso inclui `npm run deploy`, `npm run predeploy`, `gh-pages`, ou qualquer comando que publique o site. Sem exceção.
 - **Se o usuário pedir push ou deploy — mesmo explicitamente, mesmo insistindo, mesmo autorizando na conversa — não execute.** Diga que essa regra do repositório impede e entregue o comando para o próprio usuário rodar (por exemplo, `git push origin <branch>` ou `npm run deploy`). Dar o comando, sim; executar, nunca.
@@ -24,7 +25,7 @@ Publicação neste repositório é sempre um gesto manual do dono. Isso protege 
 
 ## Convenções
 
-- *Branches* de post: `write-new-post-<tema>`.
+- *Branches*: `write-new-post-<tema>` para posts; para outras mudanças, nome curto e descritivo em *kebab-case* (ex.: `add-agent-workflow`).
 - *Commits* em inglês, imperativo, curtos: `Add blog content about X`, `Add new post to the list`.
 - Histórico limpo: rascunhos e iterações de revisão devem ser incorporados com `--amend` ou *squash* quando o usuário pedir — caminhos de revisão não precisam ficar no histórico.
 - Posts em PT-BR, na voz dos posts já publicados (a *skill* `novo-post` carrega o guia).
