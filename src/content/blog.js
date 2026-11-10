@@ -1,5 +1,15 @@
 export const blog = [
   {
+    link: 'como-comecei-a-construir-agentes-de-ia',
+    title: 'Como comecei a construir agentes de IA',
+    date: '09/11/2026',
+    tags: [
+      'Inteligência Artificial',
+      'Agentes',
+      'Metodologia',
+    ],
+  },
+  {
     link: 'processo-de-inspiracao-e-desenvolvimento-do-meu-site',
     title: 'Processo de inspiração e desenvolvimento do meu site',
     date: '21/10/2025',
