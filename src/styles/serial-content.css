@@ -74,6 +74,16 @@
   padding: 0 5px;
 }
 
+.serial-content-content .mermaid-diagram {
+  margin: 20px 0;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.serial-content-content .mermaid-diagram svg {
+  max-width: 100%;
+}
+
 @keyframes content-loading-animation-bar-1 {
   0% {
     flex: 4;
