@@ -1,5 +1,15 @@
 export const blog = [
   {
+    link: 'anatomia-de-um-agente-de-ia',
+    title: 'Anatomia de um agente de IA',
+    date: '11/11/2026',
+    tags: [
+      'IA',
+      'Arquitetura',
+      'Agentes',
+    ],
+  },
+  {
     link: 'como-comecei-a-construir-agentes-de-ia',
     title: 'Como comecei a construir agentes de IA',
     date: '09/11/2026',
