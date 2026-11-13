@@ -53,6 +53,11 @@
   white-space: nowrap;
 }
 
+.serial-content-list-item a:hover .pill {
+  background-color: var(--background-monitor-screen);
+  color: var(--foreground);
+}
+
 .serial-content-content {
   line-height: 2em;
   margin-top: 30px;
