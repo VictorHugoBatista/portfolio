@@ -16,25 +16,30 @@ function About() {
         <p>Na faculdade, tive a base principal da computação, incluindo backend com Java e frontend com JavaScript, base essa que se solidificou mais com alguns freelas que fiz em conjunto com alguns colegas de faculdade e projetos de estudo que realizei antes da próxima etapa.</p>
         <p>Além disso, também me dediquei à um projeto de estágio ligado à FAPESP enquanto cursava a faculdade, atuando com Internet das Coisas para rastreamento de cargas chamado Loadtrack, usando um framework Java especializado para esse tipo de comunicação descentralizada chamado Linksmart.</p>
 
-        <h3>2015:2020: Desenvolvimento</h3>
+        <h3>2015-2020: Desenvolvimento</h3>
         <p>Saindo da faculdade, comecei a trabalhar com a criação de sites com Wordpress na Studio Visual. Aceitei o desafio sem ter qualquer experiência com PHP ou Wordpress, mas fazer parte de uma equipe com sede de conhecimento e evolução, logo estava dominando PHP, javascript e CSS e começamos a desafiar os limites do que desenvolvimento Wordpress significa: nós descobrimos o starter theme Sage (um tema Wordpress que já unia várias funcionalidades importantes que só era possível encontrar em frameworks mais modernos, como o Laravel).</p>
         <p>Pode imaginar como foi divertido aprender tudo isso e usar nos nossos projetos? É por isso que eu acredito que é impossível dar saltos consideráveis sem uma equipe crescendo junto.</p>
         <p>Eu lidei com vários sites institucionais com layout desafiadores (incluindo os sites da FMU, BSP, Serasa Experian dentre outros), ecommerces feitos com base no famoso plugin Woocommerce e alguns sistemas mais internos nessa empresa.</p>
 
-        <h3>2020:2021: Testes</h3>
+        <h3>2020-2021: Testes</h3>
         <p>Meu próximo passo foi sair do ambiente Wordpress, embora eu continuasse trabalhando com PHP: mas dessa vez deixei as WPQueries para trás e passei a trabalhar em contato total com a SQL. Saí dos templates e passei a lidar com as rotas de um sistema MVC próprio da empresa. E por fim, com toda felicidade, finalmente comecei a trabalhar com o Vue (até hoje meu framework javascript favorito, juntamente com o VueX).</p>
         <p>Na i9XP, eu estive em contato com dois produtos de ecommerce da Unilever, principalmente fazendo integração das telas de carrinho e checkout com produtos de terceiros.</p>
         <p>Eu passei a trabalhar com metodologias ageis nesse momento, também passei a atuar em uma squad com escopo mais definido.</p>
 
-        <h3>2021:2025: Deploy</h3>
-        <p>A venda da i9XP para a então Via Varejo apresentou um grande desafio para mim: A nova missão foi cuidar do app banQi em ter experiência com desenvolvimento mobile. Além disso, se tretava de uma parte especialmente sensível do app: a funcionalidade de transferências Pix. Você não imagina meu frio na barriga no deploy da primeira demanda regulatória!</p>
+        <h3>2021-2025: Deploy</h3>
+        <p>A venda da i9XP para a então Via Varejo apresentou um grande desafio para mim: A nova missão foi cuidar do app banQi em ter experiência com desenvolvimento mobile. Além disso, se tratava de uma parte especialmente sensível do app: a funcionalidade de transferências Pix. Você não imagina meu frio na barriga no deploy da primeira demanda regulatória!</p>
         <p>Como nunca tive medo de código, logo eu já estava mais confiante no React Native e no framework Node interno, bem parecido com NestJS, diga-se de passagem. E olha só, aquela mesma pessoa com medo de trabalhar com PHP e Wordpress acabou por se tornar referência técnica!</p>
         <p>Conheci o Lean Kanban e passei a trabalhar sem as sprints, me adaptando à um novo fluxo de trabalho.</p>
 
+        <h3>2026: Iteração</h3>
+        <p>2026 foi o ano em que a Inteligência Artificial entrou de vez na minha trajetória. Comecei o ano cético, mas sabia que aquele já era um novo padrão, logo fui aos estudos: pesquisei, documentei tudo em uma pesquisa pública e cheguei ao conceito do ralph loop, um agente autônomo que roda sobre uma lista de histórias até completar tudo. O que me ganhou não foi a autonomia em si, foi a disciplina que ela exige: rodar pequeno, testar na hora, consertar com o contexto fresco.</p>
+        <p>E o que começou como estudo virou trabalho de verdade: em 2026 comecei a trabalhar na Thepes, em dois projetos de desenvolvimento de agentes de IA — um de migração e manutenção, em TypeScript, e outro em andamento, escrito em Python. De projeto em projeto, a minha forma de trabalho evoluiu do loop autônomo do ralph para sessões dirigidas com o Claude Code, com worktrees, traces e avaliação de conversas. No meio do caminho, compilei tudo o que aprendi em uma metodologia aberta, o Light SDD Workflow, cuja premissa eu levo bem a sério: agentes aceleram, humanos decidem.</p>
+        <p>Se eu tivesse que resumir o ano em uma frase, seria essa: quanto mais experiência eu ganhei, mais liberdade pude dar ao agente — e em nenhum momento a responsabilidade saiu de cima de mim. A parte fácil delegamos. A parte que importa, nós decidimos.</p>
+
         <h3>Futuro</h3>
-        <p>Isso nos leva ao presente e ao futuro: me encontro voltando ás origens e estudando Java Spring e aprendendo coisas novas, como NoSQL e MongoDB e atualizando meu ReactJS e frontend web em geral (esse portifólio é um desses exercícios, inclusive!).</p>
-        <p>Só agora com a necessidade de olhar para trás para atualizar as minhas redes que percebi o tamanho do caminho que percorri para chegar até aqui. Além de muitas linhas de código escritas, muitos deploys feitos, muitos bugs resolvidos, também foram muitos clientes que tiveram sua experiência construída e melhorada pelos times com quem que tive a honra de fazer parte. Tenho muito à agredecer à cada um deles, pelo tanto que pude aprender, para além do que a faculdade ensina e pelas conexões estabelecidas.</p>
-        <p>E agora, vamos para o próximo passo?</p>
+        <p>Isso nos leva ao presente e ao futuro: ainda é só o começo desse mundo de IA, e restam muitas coisas para aprender e melhorar, em um universo em que ainda ninguém sabe direito o que é certo e errado. Mas uma coisa eu já sei: IA é uma ferramenta, e ferramenta nenhuma substitui o profissional por trás dela — quanto melhor a base de quem a usa, melhor o resultado. Por isso continuo estudando as bases da computação, enquanto o livro Competente o Suficiente, do Akita, me ajuda a rever o que eu sei e preencher o que eu não sei. E sigo de olho nas notícias, porque as melhores práticas de hoje podem virar o antipadrão de amanhã.</p>
+        <p>O laboratório também continua de pé: cada agente novo que aparece entra nele antes de entrar no meu trabalho, e os aprendizados de trabalhar dos dois jeitos — do loop autônomo do ralph ao agente dirigido com o Claude Code — podem virar um capítulo futuro do Light SDD Workflow. E, como aprendizado não tem ponto final, os jogos seguem servindo de laboratório para digerir tudo isso (esse portifólio é um desses exercícios, inclusive!).</p>
+        <p>No fim, agente de IA é como qualquer outro sistema: perde o propósito se não tiver ninguém dos dois lados da conversa — e o propósito segue sendo entender o problema real de alguém, antes de sair escrevendo código, gerado ou não.</p>
         <p>Sinta-se livre para me procurar no meu <b><a href="https://www.linkedin.com/in/victorhugobatista">linkedin</a></b> o/</p>
       </section>
     </Monitor>
