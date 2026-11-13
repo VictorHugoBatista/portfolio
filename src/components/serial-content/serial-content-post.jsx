@@ -1,9 +1,21 @@
 import Markdown from 'react-markdown';
 
 import SerialContentDetails from './layout/serial-content-details';
+import MermaidDiagram from './mermaid-diagram';
 
 import useGetPost from './hooks/get-post';
 import useGetPostContent from './hooks/get-post-content';
+
+function MarkdownPre({ children }) {
+  const codeElement = Array.isArray(children) ? children[0] : children;
+  const className = codeElement?.props?.className || '';
+
+  if (className === 'language-mermaid') {
+    return <MermaidDiagram code={String(codeElement.props.children)} />;
+  }
+
+  return <pre>{children}</pre>;
+}
 
 function SerialCotentPost({ postLink }) {
   const post = useGetPost(postLink);
@@ -23,7 +35,7 @@ function SerialCotentPost({ postLink }) {
             <span className="content-loading-bar bar-3"></span>
           </div>
         </div>
-        : <Markdown>{content}</Markdown>}
+        : <Markdown components={{ pre: MarkdownPre }}>{content}</Markdown>}
       </div>
     </article>
   );
