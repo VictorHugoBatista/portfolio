@@ -11,6 +11,8 @@
   color: var(--foreground);
   display: block;
   text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 4px;
 }
 
 .serial-content-list-item-title {
