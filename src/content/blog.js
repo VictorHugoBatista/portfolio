@@ -1,5 +1,16 @@
 export const blog = [
   {
+    link: 'construindo-o-castle-of-basilisk-o-processo-ate-agora',
+    title: 'Construindo o Castle of Basilisk: o processo até agora',
+    date: '13/11/2026',
+    tags: [
+      'Devlog',
+      'Rust',
+      'WebAssembly',
+      'Agentes',
+    ],
+  },
+  {
     link: 'anatomia-de-um-agente-de-ia',
     title: 'Anatomia de um agente de IA',
     date: '11/11/2026',
