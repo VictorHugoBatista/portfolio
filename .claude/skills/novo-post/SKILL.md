@@ -37,7 +37,7 @@ O script cria `public/content/markdown/<slug>.md` (slug gerado do título, sem a
 - Trabalhe em branch nova: `write-new-post-<tema>` (padrão do repositório).
 - Commits em inglês, imperativo, no estilo do histórico: `Add blog content about X`, `Add new post to the list`.
 - Push, PR e merge só com pedido explícito do usuário.
-- Durante as iterações de revisão, incorpore as mudanças com `--amend` (ou squash, se o usuário pedir) para manter o histórico limpo — rascunhos e caminhos de revisão não precisam ficar no histórico.
+- Durante as iterações de revisão, cada rodada entra como commit novo, com mensagem própria dizendo o que mudou — nunca `--amend`, rebase ou squash: o histórico do repositório não é reescrito.
 
 ## 5. Iteração
 
