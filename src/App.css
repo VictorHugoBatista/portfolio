@@ -142,6 +142,12 @@ a:hover {
   list-style: none;
 }
 
+.monitor-screen-top-nav .horizontal-list a {
+  display: inline-block;
+  padding: 7.5px 15px;
+  border-radius: 4px;
+}
+
 .monitor-screen-content {
   line-height: 2em;
 }
