@@ -1,3 +1,5 @@
+@import "styles/serial-content.css";
+
 :root {
   --font-title: "Bitcount";
   --font-text: "Bitcount single";
@@ -5,7 +7,7 @@
   --background-monitor: #C9C7AF;
   --background-monitor-screen: #EEF1DB;
   --foreground: #485B63;
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 72, 91, 99;
   --highlight: #f51111;
   --text-code-background: #CCD0B9;
   --text-code-border: #BBC0A8;
@@ -39,6 +41,17 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  background-color: var(--foreground);
+  color: var(--background-monitor-screen);
+  text-shadow: none;
+}
+
+::selection {
+  background-color: var(--foreground);
+  color: var(--background-monitor-screen);
+}
+
 .monitor {
   background: var(--background-monitor);
   height: 100%;
@@ -61,7 +74,28 @@ a {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
   overflow: auto;
   padding: 25px 5px;
-  width: 100%
+  width: 100%;
+  scrollbar-color: var(--foreground) var(--text-code-background);
+  scrollbar-width: auto;
+}
+
+.monitor-screen-inner::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+.monitor-screen-inner::-webkit-scrollbar-track {
+  background: var(--text-code-background);
+  box-shadow: inset 1px 0 2px rgba(0,0,0,0.15);
+}
+
+.monitor-screen-inner::-webkit-scrollbar-thumb {
+  background: var(--foreground);
+  border: 2px solid var(--background-monitor-screen);
+}
+
+.monitor-screen-inner::-webkit-scrollbar-corner {
+  background: var(--text-code-background);
 }
 
 @keyframes footerLinkGlow {
@@ -290,67 +324,37 @@ ul {
  */
 @keyframes flicker {
   0% {
-  opacity: 0.27861;
-  }
-  5% {
-  opacity: 0.34769;
+    opacity: 0.3;
   }
   10% {
-  opacity: 0.23604;
-  }
-  15% {
-  opacity: 0.90626;
+    opacity: 0.25;
   }
   20% {
-  opacity: 0.18128;
-  }
-  25% {
-  opacity: 0.83891;
+    opacity: 0.35;
   }
   30% {
-  opacity: 0.65583;
-  }
-  35% {
-  opacity: 0.67807;
+    opacity: 0.2;
   }
   40% {
-  opacity: 0.26559;
-  }
-  45% {
-  opacity: 0.84693;
+    opacity: 0.3;
   }
   50% {
-  opacity: 0.96019;
-  }
-  55% {
-  opacity: 0.08594;
+    opacity: 0.35;
   }
   60% {
-  opacity: 0.20313;
-  }
-  65% {
-  opacity: 0.71988;
+    opacity: 0.22;
   }
   70% {
-  opacity: 0.53455;
-  }
-  75% {
-  opacity: 0.37288;
+    opacity: 0.32;
   }
   80% {
-  opacity: 0.71428;
-  }
-  85% {
-  opacity: 0.70419;
+    opacity: 0.28;
   }
   90% {
-  opacity: 0.7003;
-  }
-  95% {
-  opacity: 0.36108;
+    opacity: 0.3;
   }
   100% {
-  opacity: 0.24387;
+    opacity: 0.25;
   }
 }
 
@@ -387,6 +391,14 @@ ul {
   animation: flicker 1s infinite;
 }
 
-/* ************************************************************************ */
+@media (prefers-reduced-motion: reduce) {
+  .crt::after,
+  .monitor-screen-title,
+  .bar-1,
+  .bar-2,
+  .bar-3 {
+    animation: none;
+  }
+}
 
-@import "styles/serial-content.css";
+/* ************************************************************************ */
