@@ -112,9 +112,3 @@ No mais, fiquem com os links:
  - [Langfuse — o tracing de conversas](https://github.com/langfuse/langfuse)
  - [Light SDD Workflow — o estudo que documentei](https://github.com/VictorHugoBatista/light-sdd-workflow)
  - [Gist — minha primeira pesquisa de IA](https://gist.github.com/VictorHugoBatista/cdd6a0eb842cac40362d03e0fea3a613)
-
-Obrigado e até mais o/
-
---------
-
-PS: os diagramas deste post são *Mermaid* embutido no *markdown* — e sim, renderizar isso no blog vai render um *PR* no site também :v Quem sabe não rende um post sobre a mecânica de avaliação (o "juiz" e a caixa-preta) em mais detalhes hein??
