@@ -282,7 +282,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   #root {
-    height: calc(100% - 120px);
+    height: calc(100% - 130px);
   }
 
   .monitor {
