@@ -90,7 +90,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   font-family: var(--font-text);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 4px;
   color: rgba(72, 91, 99, 0.6);
 }
@@ -231,7 +231,7 @@ a:hover {
 
   .monitor::after {
     bottom: 6px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .monitor-screen-container {
