@@ -21,14 +21,15 @@ function Home() {
             <h2>Resumo</h2>
             <p>Sou um desenvolvedor full stack com 10 anos de experiência, minhas principais competências são:</p>
             <ul>
-              <li><b>Linguagens de programação</b>: JavaScript, TypeScript, PHP, Java</li>
+              <li><b>Linguagens de programação</b>: JavaScript, TypeScript, PHP, Java, Python</li>
               <li><b>Frontend</b>: ReactJS, React Native, VueJS, Angular 2+, SASS, CSS, HTML</li>
               <li><b>Backend</b>: NestJS, Express, Laravel, Spring Boot</li>
+              <li><b>Inteligência artificial</b>: Langchain, MCP, loops agênticos, SDD</li>
               <li><b>Devops</b>: Docker, Kubernetes, AWS</li>
               <li><b>Conceitos</b>: Programação Orientada à Objetos, Programação Funcional, Microsserviços, MVC, DDD</li>
               <li><b>Automação de testes</b>: testes unitários e end to end usando Chai e Jest</li>
               <li><b>Bancos de dados</b>: MySQL, Postgres, MongoDB, Databricks</li>
-              <li><b>Observabilidade</b>: Kibana, Grafana, Dynatrace</li>
+              <li><b>Observabilidade</b>: Kibana, Grafana, Dynatrace, Langfuse</li>
               <li><b>Idiomas</b>: Inglês intermediário</li>
             </ul>
             <p>Mas não tenho medo de código! Comecei a programar em PHP sem saber a linguagem e ingressei no React Native sem estudo prévio e tive sucesso na nas duas tentativas, como você pode ver na <Link to="/minha-trajetoria">minha trajetória completa</Link>!</p>
