@@ -27,6 +27,7 @@ Publicação neste repositório é sempre um gesto manual do dono. Isso protege 
 ## Convenções
 
 - *Branches*: `write-new-post-<tema>` para posts; para outras mudanças, nome curto e descritivo em *kebab-case* (ex.: `add-agent-workflow`).
+- *Branches* nascem sem *upstream* emprestado: ao criar a partir de `origin/main`, use `--no-track` (ou rode `git branch --unset-upstream` depois) — o *upstream* da *branch* local deve ser a *branch* de mesmo nome no remoto. Primeiro envio: `git push -u origin <nome>`; a partir daí, `git push` simples vale.
 - *Commits* em inglês, imperativo, curtos: `Add blog content about X`, `Add new post to the list`.
 - Histórico como registro: revisões e iterações viram *commits* novos, cada passo visível — o histórico não é reescrito.
 - Posts em PT-BR, na voz dos posts já publicados (a *skill* `novo-post` carrega o guia).
