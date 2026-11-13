@@ -117,7 +117,7 @@ a:hover {
   overflow: auto;
   padding: 25px 5px;
   width: 100%;
-  scrollbar-color: var(--foreground) var(--text-code-background);
+  scrollbar-color: var(--foreground) transparent;
   scrollbar-width: auto;
 }
 
@@ -127,17 +127,17 @@ a:hover {
 }
 
 .monitor-screen-inner::-webkit-scrollbar-track {
-  background: var(--text-code-background);
-  box-shadow: inset 1px 0 2px rgba(0,0,0,0.15);
+  background: transparent;
 }
 
 .monitor-screen-inner::-webkit-scrollbar-thumb {
   background: var(--foreground);
-  border: 2px solid var(--background-monitor-screen);
+  border: 3px solid var(--background-monitor-screen);
+  border-radius: 7px;
 }
 
 .monitor-screen-inner::-webkit-scrollbar-corner {
-  background: var(--text-code-background);
+  background: transparent;
 }
 
 @keyframes footerLinkGlow {
