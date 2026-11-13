@@ -9,7 +9,14 @@
 
 .serial-content-list-item a {
   color: var(--foreground);
+  display: block;
   text-decoration: none;
+  padding: 7.5px 15px;
+  border-radius: 4px;
+}
+
+.serial-content-list-item h3 {
+  margin: 0;
 }
 
 .serial-content-list-item-title {
@@ -50,6 +57,13 @@
   line-break: normal;
   padding: 5px 15px;
   white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.serial-content-list-item a:hover .pill,
+.serial-content-list-item a:focus-visible .pill {
+  background-color: var(--background-monitor-screen);
+  color: var(--foreground);
 }
 
 .serial-content-content {

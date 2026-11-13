@@ -1,11 +1,14 @@
+@import "styles/serial-content.css";
+
 :root {
   --font-title: "Bitcount";
   --font-text: "Bitcount single";
   --font-jumbotron: "Doto";
   --background-monitor: #C9C7AF;
+  --background-monitor-bezel: #B9B5A0;
   --background-monitor-screen: #EEF1DB;
   --foreground: #485B63;
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 72, 91, 99;
   --highlight: #f51111;
   --text-code-background: #CCD0B9;
   --text-code-border: #BBC0A8;
@@ -26,8 +29,11 @@ body {
   overflow: hidden;
 }
 
+/* #root height must equal the viewport minus 2 * .monitor vertical padding,
+   because .monitor uses box-sizing: content-box. Keep both in sync per
+   breakpoint: 28 (14x2), 50 (25x2), 80 (40x2), 130 (50+80). */
 #root {
-  height: calc(100% - 20px);
+  height: calc(100% - 28px);
 }
 
 .monitor-screen-container {
@@ -37,13 +43,61 @@ body {
 a {
   font-weight: 500;
   text-decoration: underline;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+a:hover,
+a:focus-visible {
+  background-color: var(--foreground);
+  color: var(--background-monitor-screen);
+  text-shadow: none;
+}
+
+::selection {
+  background-color: var(--foreground);
+  color: var(--background-monitor-screen);
+  text-shadow: none;
 }
 
 .monitor {
-  background: var(--background-monitor);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 14%, rgba(0, 0, 0, 0.05) 70%, rgba(0, 0, 0, 0.14) 100%),
+    var(--background-monitor);
   height: 100%;
   display: flex;
-  padding: 10px 10px;
+  padding: 14px;
+  position: relative;
+}
+
+.monitor::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, rgba(40, 40, 36, 0.55) 1.4px, rgba(0, 0, 0, 0.12) 2px, transparent 2.6px),
+    radial-gradient(circle, rgba(40, 40, 36, 0.55) 1.4px, rgba(0, 0, 0, 0.12) 2px, transparent 2.6px),
+    radial-gradient(circle, rgba(40, 40, 36, 0.55) 1.4px, rgba(0, 0, 0, 0.12) 2px, transparent 2.6px),
+    radial-gradient(circle, rgba(40, 40, 36, 0.55) 1.4px, rgba(0, 0, 0, 0.12) 2px, transparent 2.6px);
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+  background-position:
+    top 9px left 9px,
+    top 9px right 9px,
+    bottom 9px left 9px,
+    bottom 9px right 9px;
+}
+
+.monitor::after {
+  content: "VHB-2000";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-text);
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: rgba(72, 91, 99, 0.6);
 }
 
 .monitor-screen {
@@ -54,14 +108,41 @@ a {
 
 .monitor-screen-inner {
   background: var(--background-monitor-screen);
-  border-radius: 10px;
-  box-shadow: inset 1px 1px 7px 7px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow:
+    inset 1px 1px 7px 7px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.12),
+    0 0 0 7px var(--background-monitor-bezel),
+    0 0 0 9px rgba(0, 0, 0, 0.18),
+    0 0 0 10px rgba(255, 255, 255, 0.4),
+    0 10px 30px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   overflow: auto;
   padding: 25px 5px;
-  width: 100%
+  width: 100%;
+  scrollbar-color: var(--foreground) transparent;
+  scrollbar-width: auto;
+}
+
+.monitor-screen-inner::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+.monitor-screen-inner::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.monitor-screen-inner::-webkit-scrollbar-thumb {
+  background: var(--foreground);
+  border: 3px solid var(--background-monitor-screen);
+  border-radius: 7px;
+}
+
+.monitor-screen-inner::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 @keyframes footerLinkGlow {
@@ -107,6 +188,12 @@ a {
   list-style: none;
 }
 
+.monitor-screen-top-nav .horizontal-list a {
+  display: inline-block;
+  padding: 2.5px 7.5px;
+  border-radius: 4px;
+}
+
 .monitor-screen-content {
   line-height: 2em;
 }
@@ -145,6 +232,11 @@ a {
 
   .monitor {
     padding: 25px 40px;
+  }
+
+  .monitor::after {
+    bottom: 6px;
+    font-size: 12px;
   }
 
   .monitor-screen-container {
@@ -194,12 +286,17 @@ a {
 }
 
 @media (min-width: 1200px) {
+  /* 130 = 50 top + 80 bottom of .monitor below (see invariant comment on #root) */
   #root {
-    height: calc(100% - 120px);
+    height: calc(100% - 130px);
   }
 
   .monitor {
     padding: 50px 50px 80px;
+  }
+
+  .monitor::after {
+    bottom: 30px;
   }
 
   .monitor-screen-container {
@@ -290,67 +387,37 @@ ul {
  */
 @keyframes flicker {
   0% {
-  opacity: 0.27861;
-  }
-  5% {
-  opacity: 0.34769;
+    opacity: 0.3;
   }
   10% {
-  opacity: 0.23604;
-  }
-  15% {
-  opacity: 0.90626;
+    opacity: 0.25;
   }
   20% {
-  opacity: 0.18128;
-  }
-  25% {
-  opacity: 0.83891;
+    opacity: 0.35;
   }
   30% {
-  opacity: 0.65583;
-  }
-  35% {
-  opacity: 0.67807;
+    opacity: 0.2;
   }
   40% {
-  opacity: 0.26559;
-  }
-  45% {
-  opacity: 0.84693;
+    opacity: 0.3;
   }
   50% {
-  opacity: 0.96019;
-  }
-  55% {
-  opacity: 0.08594;
+    opacity: 0.35;
   }
   60% {
-  opacity: 0.20313;
-  }
-  65% {
-  opacity: 0.71988;
+    opacity: 0.22;
   }
   70% {
-  opacity: 0.53455;
-  }
-  75% {
-  opacity: 0.37288;
+    opacity: 0.32;
   }
   80% {
-  opacity: 0.71428;
-  }
-  85% {
-  opacity: 0.70419;
+    opacity: 0.28;
   }
   90% {
-  opacity: 0.7003;
-  }
-  95% {
-  opacity: 0.36108;
+    opacity: 0.3;
   }
   100% {
-  opacity: 0.24387;
+    opacity: 0.25;
   }
 }
 
@@ -366,9 +433,13 @@ ul {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.04) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.025), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.01));
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.04) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.025), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.01)),
+    radial-gradient(ellipse 140% 110% at 50% 45%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.16) 100%),
+    radial-gradient(ellipse 55% 40% at 15% 6%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 60%);
   z-index: 2;
-  background-size: 100% 2px, 3px 100%;
+  background-size: 100% 2px, 3px 100%, 100% 100%, 100% 100%;
   pointer-events: none;
 }
 
@@ -387,6 +458,14 @@ ul {
   animation: flicker 1s infinite;
 }
 
-/* ************************************************************************ */
+@media (prefers-reduced-motion: reduce) {
+  .crt::after,
+  .monitor-screen-title,
+  .bar-1,
+  .bar-2,
+  .bar-3 {
+    animation: none;
+  }
+}
 
-@import "styles/serial-content.css";
+/* ************************************************************************ */
