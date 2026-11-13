@@ -11,8 +11,12 @@
   color: var(--foreground);
   display: block;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 7.5px 15px;
   border-radius: 4px;
+}
+
+.serial-content-list-item h3 {
+  margin: 0;
 }
 
 .serial-content-list-item-title {
