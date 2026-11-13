@@ -59,7 +59,8 @@
   white-space: nowrap;
 }
 
-.serial-content-list-item a:hover .pill {
+.serial-content-list-item a:hover .pill,
+.serial-content-list-item a:focus-visible .pill {
   background-color: var(--background-monitor-screen);
   color: var(--foreground);
 }

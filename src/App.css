@@ -29,6 +29,9 @@ body {
   overflow: hidden;
 }
 
+/* #root height must equal the viewport minus 2 * .monitor vertical padding,
+   because .monitor uses box-sizing: content-box. Keep both in sync per
+   breakpoint: 28 (14x2), 50 (25x2), 80 (40x2), 130 (50+80). */
 #root {
   height: calc(100% - 28px);
 }
@@ -43,7 +46,8 @@ a {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-a:hover {
+a:hover,
+a:focus-visible {
   background-color: var(--foreground);
   color: var(--background-monitor-screen);
   text-shadow: none;
@@ -52,6 +56,7 @@ a:hover {
 ::selection {
   background-color: var(--foreground);
   color: var(--background-monitor-screen);
+  text-shadow: none;
 }
 
 .monitor {
@@ -281,6 +286,7 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
+  /* 130 = 50 top + 80 bottom of .monitor below (see invariant comment on #root) */
   #root {
     height: calc(100% - 130px);
   }
